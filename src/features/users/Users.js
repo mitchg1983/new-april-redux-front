@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectAllUsers } from "./usersSlice";
 
 export function Users() {
   const allUsers = useSelector(selectAllUsers);
-  const dispatch = useDispatch();
-  const [currentName, setCurrentName] = useState("Mitch");
+  // const dispatch = useDispatch();
+  // const [currentName, setCurrentName] = useState("Mitch");
 
   return (
     <div>
