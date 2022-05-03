@@ -45,10 +45,6 @@ export const fetchUsersList = createAsyncThunk(
   async (req, res) => {
     console.log("starting fetUsersList")
     const response = await fetch("http://localhost:3100/users/get-all-users");
-    // const data = await response.json();
-    // console.log(data);
-    // // const usersList = data;
-    // return data;
     console.log(response)
   }
 );

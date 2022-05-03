@@ -20,20 +20,28 @@ const getAllUsers = async (req, res) => {
   return payload;
 };
 
+// async function setNewList() {
+//   console.log("Beginning setNewList");
+//   const newList = await getAllUsers();
+//   // setUsersList(...newList);
+//   console.log(newList);
+//   return newList;
+// }
+
 function App() {
   const [usersList, setUsersList] = useState([]);
 
   useEffect(() => {
     console.log("Beginning useEffect on App.js...");
 
-    async function setNewList() {
-      console.log("userList is currently...", usersList);
-      const newList = await getAllUsers();
-      console.log("newList is...", newList)
+    async function getThis() {
+      let newList = await getAllUsers();
+      console.log("We have this...", newList);
       setUsersList(newList);
-      console.log("userList is NOW...", usersList);
     };
-    setNewList();
+
+    getThis();
+
   }, []);
 
   return (
