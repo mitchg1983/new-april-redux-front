@@ -29,7 +29,7 @@ export const usersSlice = createSlice({
 
   //Reducers
   reducers: {
-    fetchAllUsers: (state) => state.usersList
+    fetchAllUsers: (state) => state.usersList,
   },
   extraReducers(builder) {
     // builder.addcase("users/listAllUsers/fulfilled", (state, action) => {
@@ -39,6 +39,19 @@ export const usersSlice = createSlice({
 });
 
 export const { fetchAllUsers } = usersSlice.actions;
+
+export const fetchUsersList = createAsyncThunk(
+  "users/fetchUsersList",
+  async (req, res) => {
+    console.log("starting fetUsersList")
+    const response = await fetch("http://localhost:3100/users/get-all-users");
+    // const data = await response.json();
+    // console.log(data);
+    // // const usersList = data;
+    // return data;
+    console.log(response)
+  }
+);
 
 export const selectAllUsers = (state) => state.users.usersList;
 

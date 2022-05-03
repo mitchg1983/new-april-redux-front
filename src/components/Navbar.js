@@ -5,6 +5,8 @@ export function Navbar() {
     <nav>
       <Link to="/"> Home </Link>
       <Link to="/connect"> Connect </Link>
+      <Link to="/users"> Users </Link>
+      <Link to="/signup"> Sign Up </Link>
     </nav>
   );
 }
