@@ -1,19 +1,83 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  background-color: lightgray;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 10vw;
   justify-content: space-between;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.movie-poster {
+  height: 200px;
+}
+
+.poster-tab {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 10px;
+  /* border: solid red 1px; */
+  background-color: #fff;
+}
+
+.clicked {
+  box-shadow: 0px 0px 10px 10px rgba(255, 213, 0, 0.505);
+
+}
+
+.poster-tab:hover {
+  box-shadow: 0px 0px 10px 10px rgba(0, 225, 255, 0.505);
+
+}
+
+.director-row {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 100%;
+  background-color: gray;
+  margin-top: 5px;
+  padding: 20px 0;
+}
+
+.poster-data {
+  font-size: calc(2px + 2vmin);
+
+}
+
+.userbug-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.connect {
+  width: 100%;
 }

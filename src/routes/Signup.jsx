@@ -1,4 +1,3 @@
-import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Signup() {
@@ -22,8 +21,8 @@ export default function Signup() {
     const newUser = {
       name: username,
       username: username + "$$",
-      movieData: [],
-      userData: [],
+      movieData: ["No favorite movies yet!"],
+      userData: ["User has no data."],
     };
     const postNewUser = async () => {
       const response = await fetch("http://localhost:3100/users/create-user", {
@@ -34,6 +33,7 @@ export default function Signup() {
         body: JSON.stringify(newUser),
       });
       const postBody = await response.json();
+      return postBody
     };
 
     postNewUser();

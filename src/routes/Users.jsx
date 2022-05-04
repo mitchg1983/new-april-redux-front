@@ -1,24 +1,29 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { selectAllUsers } from "../features/users/usersSlice";
-import { Outlet, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Users() {
-  const allUsers = useSelector(selectAllUsers);
+  console.log("Beginning Users route...");
+
+  const location = useLocation();
+  const data = location.state;
+
+  console.log("Users...", data);
 
   return (
     <div>
-      Users
-      <h2>Users List</h2>
-      {allUsers.map((user, idx) => {
-        return (
-          <div key={`user-${idx}`}>
-            <p>{user.name}</p>
-            <p>{user.id}</p>
-          </div>
-        );
-      })}
-      <Outlet />
+      <h2> Users Page </h2>
+      <div>
+        {data.map((user, idx) => {
+          return (
+            <div key={`user-mapped-${idx}`} >
+              <li>{user.name}</li>
+              <li>{user.username}</li>
+              <li>{user.movieData}</li>
+              <li>{user.userData}</li>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
