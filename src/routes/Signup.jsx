@@ -1,26 +1,21 @@
 import { useState } from "react";
 
 export default function Signup() {
-  const [username, setUsername] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleName = (e) => {
-    setUsername(e.target.value);
+  const handleDisplayName = (e) => {
+    setDisplayName(e.target.value);
   };
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
 
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-  };
-
   const handleSubmit = (e) => {
     const newUser = {
-      name: username,
-      username: username + "$$",
+      username: displayName,
+      email: email,
       movieData: ["No favorite movies yet!"],
       userData: ["User has no data."],
     };
@@ -47,11 +42,11 @@ export default function Signup() {
         </div>
 
         <div>
-          <label className="label">Name</label>
+          <label className="label">Display Name</label>
           <input
-            onChange={handleName}
+            onChange={handleDisplayName}
             className="input"
-            value={username}
+            value={displayName}
             type="text"
           />
 
@@ -61,14 +56,6 @@ export default function Signup() {
             className="input"
             value={email}
             type="email"
-          />
-
-          <label className="label">Password</label>
-          <input
-            onChange={handlePassword}
-            className="input"
-            value={password}
-            type="password"
           />
 
           <button onClick={handleSubmit} className="btn" type="submit">

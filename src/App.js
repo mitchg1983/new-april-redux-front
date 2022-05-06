@@ -64,7 +64,10 @@ function App() {
   return (
     <div className="App">
       <div className="top-bar">
-        <Navbar theList={usersList} catalogue={catalogue} />
+        <Navbar theList={usersList} catalogue={catalogue} thisUser={currentUser}/>
+
+
+        
         <div className="userbug-box">
           {" "}
           <UserBug name={currentUser} />
@@ -85,7 +88,7 @@ function App() {
                 onClick={(e) => {
                   setNoValidUser("");
                   const result = usersList.filter(
-                    (user) => user.name === inputUserName
+                    (user) => user.username === inputUserName
                   );
 
                   if (result.length > 0) {

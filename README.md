@@ -44,3 +44,159 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+{
+    "_id" : ObjectId("62729dc659165102a2eca501"),
+    "title" : "Praying With Anger",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/praying-with-anger.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729df659165102a2eca503"),
+    "title" : "The Sixth Sense",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/the-sixth-sense.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e0259165102a2eca505"),
+    "title" : "Unbreakable",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/unbreakable.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e0a59165102a2eca507"),
+    "title" : "Signs",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/signs.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e1159165102a2eca509"),
+    "title" : "The Village",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/the-village.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e1a59165102a2eca50b"),
+    "title" : "Lady in the Water",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/lady-in-the-water.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e3659165102a2eca50d"),
+    "title" : "The Happening",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/the-happening.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e4059165102a2eca50f"),
+    "title" : "The Last Airbender",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/the-last-airbender.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e4759165102a2eca511"),
+    "title" : "After Earth",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/after-earth.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e4d59165102a2eca513"),
+    "title" : "The Visit",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/the-visit.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729e7959165102a2eca517"),
+    "title" : "The Buried Secret of M. Night Shyamalan",
+    "poster" : "/posters/Shyamalan/the-buried-secret.jpg",
+    "director" : "M Night Shyamalan",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729ea559165102a2eca519"),
+    "title" : "Split",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/split.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729ead59165102a2eca51b"),
+    "title" : "Glass",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/glass.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+},
+{
+    "_id" : ObjectId("62729eb259165102a2eca51d"),
+    "title" : "Old",
+    "director" : "M Night Shyamalan",
+    "poster" : "/posters/Shyamalan/old.jpeg",
+    "userStats" : {
+        "watched" : "",
+        "liked" : ""
+    },
+    "__v" : 0
+}
